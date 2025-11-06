@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
     if (strcmp(command, "init") == 0) {
         if (mkdir(".git", 0755) == -1 || // means read and execute access for everyone and also write access for the owner of the file
             mkdir(".git/objects", 0755) == -1 || // Where blobs, trees and commits were storage
-            mkdir(".git/refs", 0755) == -1) { // Where were the references (branchs, tags)
+            mkdir(".git/refs", 0755) == -1) { // Where are the references (branchs, tags)
 
             fprintf(stderr, "Failed to create directories %s\n", strerror(errno));
             return 1;

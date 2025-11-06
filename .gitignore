@@ -12,6 +12,10 @@
 *.map
 *.exp
 
+# CLion project files
+.idea
+cmake-build-*
+
 # Precompiled Headers
 *.gch
 *.pch
